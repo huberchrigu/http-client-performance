@@ -16,7 +16,7 @@ public class HttpClientApplication {
 
     @RestController
     public static class PingRestController {
-        private final HttpClient httpClient = HttpClient.create();
+        private final HttpClient httpClient = HttpClient.create().wiretap(true);
 
 //        @PostMapping
 //        public void warmUp() {
